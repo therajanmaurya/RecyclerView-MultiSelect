@@ -22,6 +22,8 @@
         <activity android:name=".activity.MultiSelectionActivity"
                     android:theme="@style/AppTheme"/>
 
+        <activity android:name=".fragment.FragmentSelectionActivity"/>
+
     </application>
 
 </manifest>

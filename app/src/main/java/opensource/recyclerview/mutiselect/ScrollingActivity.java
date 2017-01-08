@@ -4,20 +4,15 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.CardView;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
 
-import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 import opensource.recyclerview.mutiselect.activity.MultiSelectionActivity;
+import opensource.recyclerview.mutiselect.fragment.FragmentSelectionActivity;
 
 public class ScrollingActivity extends AppCompatActivity {
-
-
-    @BindView(R.id.card_fragment)
-    CardView cvFragment;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,6 +26,11 @@ public class ScrollingActivity extends AppCompatActivity {
     @OnClick(R.id.card_activity)
     void onClickActivityCard() {
         startActivity(new Intent(this, MultiSelectionActivity.class));
+    }
+
+    @OnClick(R.id.card_fragment)
+    void onClickFragmentCard() {
+        startActivity(new Intent(this, FragmentSelectionActivity.class));
     }
 
     @OnClick(R.id.fab)
