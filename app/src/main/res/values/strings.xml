@@ -4,4 +4,5 @@
     <string name="in_activity">In Activity</string>
     <string name="in_fragment">In Fragment</string>
     <string name="multi_selection">Multi Selection</string>
+    <string name="select">Select</string>
 </resources>
